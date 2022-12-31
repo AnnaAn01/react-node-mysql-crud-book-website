@@ -14,7 +14,7 @@ const Update = () => {
     const location = useLocation();
 
     const bookId = location.pathname.split("/")[2];
-    // console.log(location.pathname.split("/")[2])
+
 
     const handleChange = (e) => {
         setBook((prev) => ({
