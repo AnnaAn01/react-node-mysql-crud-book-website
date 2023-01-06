@@ -14,6 +14,7 @@ const Update = () => {
     const location = useLocation();
 
     const bookId = location.pathname.split("/")[2];
+    // console.log(location.pathname)
 
 
     const handleChange = (e) => {
@@ -39,7 +40,7 @@ const Update = () => {
             <input type="text" placeholder="desc" onChange={handleChange} name="desc" />
             <input type="number" placeholder="price" onChange={handleChange} name="price" />
             <input type="text" placeholder="cover" onChange={handleChange} name="cover" />
-            <button className='formBurron' onClick={handleClick}>Update</button>
+            <button className='formButton' onClick={handleClick}>Update</button>
         </div>
     )
 }
